@@ -1,0 +1,9 @@
+{
+  "id": "cc06a871-11f5-41aa-b1d2-a87d729ba0bb",
+  "template": "empty",
+  "modules": {
+    "MyCompany.MyModule": {
+      "path": "MyCompany.MyModule.abpmdl"
+    }
+  }
+}

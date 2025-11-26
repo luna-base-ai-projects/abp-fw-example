@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>MyCompany.MyModule</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\MyCompany.MyModule.Domain\MyCompany.MyModule.Domain.csproj" />
+    <ProjectReference Include="..\MyCompany.MyModule.TestBase\MyCompany.MyModule.TestBase.csproj" />
+  </ItemGroup>
+
+
+</Project>

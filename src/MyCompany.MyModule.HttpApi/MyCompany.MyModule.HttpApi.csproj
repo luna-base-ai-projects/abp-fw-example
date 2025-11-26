@@ -1,0 +1,31 @@
+
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>MyCompany.MyModule</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="10.0.0"/>
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI" Version="10.0.0"/>
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared" Version="10.0.0"/>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="10.0.0"/>
+    <ProjectReference Include="..\MyCompany.MyModule.Application.Contracts\MyCompany.MyModule.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\**\*.css" />
+    <EmbeddedResource Include="Pages\**\*.js" />
+    <EmbeddedResource Include="Pages\**\*.cshtml" />
+    <EmbeddedResource Include="Views\**\*.css" />
+    <EmbeddedResource Include="Views\**\*.js" />
+    <EmbeddedResource Include="Views\**\*.cshtml" />
+  </ItemGroup>
+  
+  <!-- Remove Content directive for Pages as they should be EmbeddedResource -->
+
+</Project>

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>MyCompany.MyModule</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Mapperly" Version="10.0.0" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="10.0.0" />
+    <ProjectReference Include="..\MyCompany.MyModule.Application.Contracts\MyCompany.MyModule.Application.Contracts.csproj" />
+    <ProjectReference Include="..\MyCompany.MyModule.Domain\MyCompany.MyModule.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
